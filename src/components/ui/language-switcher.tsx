@@ -34,6 +34,22 @@ export function LanguageSwitcher() {
         >
           Hindi (हिंदी)
         </button>
+        <button
+          onClick={() => setLanguage("fr")}
+          className={`px-4 py-2 text-left text-[13px] font-bold tracking-wider uppercase transition-colors hover:bg-white/5 ${
+            language === "fr" ? "text-[#9a1818]" : "text-white"
+          }`}
+        >
+          French (Fr)
+        </button>
+        <button
+          onClick={() => setLanguage("es")}
+          className={`px-4 py-2 text-left text-[13px] font-bold tracking-wider uppercase transition-colors hover:bg-white/5 ${
+            language === "es" ? "text-[#9a1818]" : "text-white"
+          }`}
+        >
+          Spanish (Es)
+        </button>
       </div>
     </div>
   );

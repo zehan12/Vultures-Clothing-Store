@@ -1,7 +1,20 @@
-import type { ContentPage } from "@/data/content";
-import { Breadcrumb } from "@/components/shared/breadcrumb";
+"use client";
 
-export function ContentPageView({ page }: { page: ContentPage }) {
+import { contentPages } from "@/data/content";
+import { Breadcrumb } from "@/components/shared/breadcrumb";
+import { useLanguage } from "@/components/providers/language-provider";
+
+export function ContentPageView({ pageId }: { pageId: string }) {
+  const { language } = useLanguage();
+  
+  // Get content for current language, fallback to English if not available
+  const contentMap = contentPages[language as keyof typeof contentPages] || contentPages.en;
+  const page = contentMap[pageId];
+
+  if (!page) {
+    return null; // Or some 404/fallback
+  }
+
   return (
     <div className="page-load-animate mx-auto max-w-[800px] px-6 py-12">
       <Breadcrumb

@@ -1,3 +1,7 @@
+import { contentPagesHi } from './content-hi';
+import { contentPagesFr } from './content-fr';
+import { contentPagesEs } from './content-es';
+
 export type ContentSection =
   | { type: "paragraph"; text: string; bold?: boolean }
   | { type: "heading"; text: string }
@@ -10,7 +14,7 @@ export type ContentPage = {
   sections: ContentSection[];
 };
 
-export const contentPages: Record<string, ContentPage> = {
+export const contentPagesEn: Record<string, ContentPage> = {
   "about-us": {
     title: "About Us",
     breadcrumb: "About Us",
@@ -301,4 +305,12 @@ export const contentPages: Record<string, ContentPage> = {
       },
     ],
   },
+};
+
+
+export const contentPages = {
+  en: contentPagesEn,
+  hi: contentPagesHi,
+  fr: contentPagesFr,
+  es: contentPagesEs
 };

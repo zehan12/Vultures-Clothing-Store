@@ -230,4 +230,75 @@ export const contentPages: Record<string, ContentPage> = {
       },
     ],
   },
+  "exchange-policy": {
+    title: "Exchange Policy",
+    breadcrumb: "Exchange Policy",
+    sections: [
+      {
+        type: "paragraph",
+        text: "We offer a hassle-free exchange policy. You can exchange your item within 7 days of delivery if the size doesn't fit or if you received a defective product.",
+      },
+      { type: "heading", text: "Exchange Conditions" },
+      {
+        type: "list",
+        items: [
+          "Items must be unused, unwashed, and have original tags attached.",
+          "Exchanges are subject to size availability.",
+          "Clearance/Sale items cannot be exchanged.",
+        ],
+      },
+      { type: "heading", text: "How to Exchange" },
+      {
+        type: "paragraph",
+        text: "Visit our Exchange Portal and enter your order number and email. Follow the instructions to select the item you want to exchange.",
+      },
+    ],
+  },
+  "policies": {
+    title: "All Policies",
+    breadcrumb: "Policies",
+    sections: [
+      {
+        type: "paragraph",
+        text: "Below you will find links to all our store policies.",
+      },
+      {
+        type: "list",
+        items: [
+          "Return Policy",
+          "Refund Policy",
+          "Shipping Policy",
+          "Terms of Service",
+          "Privacy Policy",
+          "Exchange Policy",
+        ],
+      },
+    ],
+  },
+  "partner": {
+    title: "Partner With Us",
+    breadcrumb: "Partner With Us",
+    sections: [
+      {
+        type: "paragraph",
+        text: "Are you a creator, influencer, or retailer? We'd love to partner with you!",
+        bold: true,
+      },
+      { type: "heading", text: "Creators & Influencers" },
+      {
+        type: "paragraph",
+        text: "Join the Genrage family and get access to exclusive drops, PR packages, and affiliate commissions. Send us your portfolio and social links to collaborate.",
+      },
+      { type: "heading", text: "Wholesale & Retail" },
+      {
+        type: "paragraph",
+        text: "Interested in stocking Genrage in your store? We offer competitive wholesale pricing for select boutique partners.",
+      },
+      { type: "heading", text: "Get in Touch" },
+      {
+        type: "html",
+        html: 'Email us at <a href="mailto:partners@genzy.store" class="text-[#9a1818] hover:underline">partners@genzy.store</a>',
+      },
+    ],
+  },
 };

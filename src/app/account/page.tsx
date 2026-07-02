@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/shared/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Login - Gengy Summer",
+  title: "Login - Vultures",
 };
 
 export default function AccountPage() {

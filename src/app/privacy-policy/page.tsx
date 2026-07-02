@@ -4,7 +4,7 @@ import { ContentPageView } from "@/components/content/content-page";
 import { contentPages } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy - Gengy Summer",
+  title: "Privacy Policy - Vultures",
 };
 
 export default function PrivacyPolicyPage() {

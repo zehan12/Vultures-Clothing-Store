@@ -2,7 +2,7 @@ import { Star } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Reviews - Gengy Summer",
+  title: "Reviews - Vultures",
 };
 
 export default function ReviewsPage() {
@@ -19,7 +19,7 @@ export default function ReviewsPage() {
     <div className="mx-auto max-w-[1200px] px-6 py-12 md:py-24">
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-3xl font-bold uppercase tracking-widest text-white md:text-5xl">
-          GENRAGE REVIEWS
+          VULTURES REVIEWS
         </h1>
         <div className="flex items-center justify-center gap-2 text-yellow-500">
           <Star className="h-6 w-6 fill-current" />

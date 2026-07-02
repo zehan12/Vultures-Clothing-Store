@@ -56,7 +56,7 @@ export function Header() {
           <Link href="/" className="shrink-0">
             <Image
               src={catalog.assets.logo}
-              alt="Gengy Summer"
+              alt="Vultures"
               width={70}
               height={70}
               className="h-[40px] w-auto object-contain md:h-[55px]"

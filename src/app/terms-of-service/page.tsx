@@ -4,7 +4,7 @@ import { ContentPageView } from "@/components/content/content-page";
 import { contentPages } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Terms of Service - Gengy Summer",
+  title: "Terms of Service - Vultures",
 };
 
 export default function TermsOfServicePage() {

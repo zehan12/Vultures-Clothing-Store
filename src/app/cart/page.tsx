@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Cart - Gengy Summer",
+  title: "Cart - Vultures",
 };
 
 export default function CartPage() {

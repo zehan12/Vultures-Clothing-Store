@@ -48,7 +48,7 @@ export const contentPages: Record<string, ContentPage> = {
       { type: "heading", text: "Contact Us" },
       {
         type: "html",
-        html: 'Have questions? Reach out to us at <a href="mailto:support@genzy.store" class="text-[#9a1818] hover:underline">support@genzy.store</a>',
+        html: 'Have questions? Reach out to us at <a href="mailto:support@vultures.store" class="text-[#9a1818] hover:underline">support@vultures.store</a>',
       },
     ],
   },
@@ -88,7 +88,7 @@ export const contentPages: Record<string, ContentPage> = {
       { type: "heading", text: "Contact" },
       {
         type: "html",
-        html: 'For questions about this Privacy Policy, contact us at <a href="mailto:support@genzy.store" class="text-[#9a1818] hover:underline">support@genzy.store</a>',
+        html: 'For questions about this Privacy Policy, contact us at <a href="mailto:support@vultures.store" class="text-[#9a1818] hover:underline">support@vultures.store</a>',
       },
     ],
   },
@@ -144,7 +144,7 @@ export const contentPages: Record<string, ContentPage> = {
       {
         type: "list",
         items: [
-          "Contact us at support@genzy.store with your order ID",
+          "Contact us at support@vultures.store with your order ID",
           "Our team will provide return shipping instructions",
           "Pack the item securely in original packaging",
           "Ship the item back to us",
@@ -182,7 +182,7 @@ export const contentPages: Record<string, ContentPage> = {
       { type: "heading", text: "Exchanges" },
       {
         type: "html",
-        html: 'We only replace items if they are defective or damaged. If you need to exchange for the same item in a different size, contact us at <a href="mailto:support@genzy.store" class="text-[#9a1818] hover:underline">support@genzy.store</a>',
+        html: 'We only replace items if they are defective or damaged. If you need to exchange for the same item in a different size, contact us at <a href="mailto:support@vultures.store" class="text-[#9a1818] hover:underline">support@vultures.store</a>',
       },
       { type: "heading", text: "Failed/Cancelled Payments" },
       {
@@ -287,17 +287,17 @@ export const contentPages: Record<string, ContentPage> = {
       { type: "heading", text: "Creators & Influencers" },
       {
         type: "paragraph",
-        text: "Join the Genrage family and get access to exclusive drops, PR packages, and affiliate commissions. Send us your portfolio and social links to collaborate.",
+        text: "Join the Vultures family and get access to exclusive drops, PR packages, and affiliate commissions. Send us your portfolio and social links to collaborate.",
       },
       { type: "heading", text: "Wholesale & Retail" },
       {
         type: "paragraph",
-        text: "Interested in stocking Genrage in your store? We offer competitive wholesale pricing for select boutique partners.",
+        text: "Interested in stocking Vultures in your store? We offer competitive wholesale pricing for select boutique partners.",
       },
       { type: "heading", text: "Get in Touch" },
       {
         type: "html",
-        html: 'Email us at <a href="mailto:partners@genzy.store" class="text-[#9a1818] hover:underline">partners@genzy.store</a>',
+        html: 'Email us at <a href="mailto:partners@vultures.store" class="text-[#9a1818] hover:underline">partners@vultures.store</a>',
       },
     ],
   },

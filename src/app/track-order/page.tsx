@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Breadcrumb } from "@/components/shared/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Track Order - Gengy Summer",
+  title: "Track Order - Vultures",
 };
 
 export default function TrackOrderPage() {

@@ -2,7 +2,7 @@ import { ArrowRight, PackageSearch } from "lucide-react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Exchange Portal - Gengy Summer",
+  title: "Exchange Portal - Vultures",
 };
 
 export default function ExchangePortalPage() {

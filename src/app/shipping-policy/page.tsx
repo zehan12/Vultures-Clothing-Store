@@ -4,7 +4,7 @@ import { ContentPageView } from "@/components/content/content-page";
 import { contentPages } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "Shipping Policy - Gengy Summer",
+  title: "Shipping Policy - Vultures",
 };
 
 export default function ShippingPolicyPage() {

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blogs - Gengy Summer",
+  title: "Blogs - Vultures",
 };
 
 export default function BlogsPage() {
@@ -17,7 +17,7 @@ export default function BlogsPage() {
         BLOGS
       </h1>
       <p className="mb-12 text-center text-gray-400">
-        News, style guides, and updates from the Genrage team.
+        News, style guides, and updates from the Vultures team.
       </p>
 
       <div className="space-y-8">

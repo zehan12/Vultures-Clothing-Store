@@ -16,13 +16,13 @@
           "hoverImage": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/witch-black-baggy-pants-genrage-2.png?v=1780668616"
         },
         {
-          "id": "basic-black-genrage-baggy-pants",
+          "id": "basic-black-vultures-baggy-pants",
           "discount": 34,
-          "name": "Basic Black Genrage Baggy Pants",
+          "name": "Basic Black Vultures Baggy Pants",
           "category": "Baggy Pants",
           "originalPrice": "₹3,299.00",
           "salePrice": "₹2,180.00",
-          "slug": "/product/basic-black-genrage-baggy-pants",
+          "slug": "/product/basic-black-vultures-baggy-pants",
           "image": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/basic-black-baggy-pants-genrage-1.png?v=1780668291",
           "hoverImage": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/basic-black-baggy-pants-genrage-2.png?v=1780668293"
         },
@@ -49,24 +49,24 @@
           "hoverImage": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/dark-grey-xyden-baggy-pants-genrage-2.png?v=1780668752"
         },
         {
-          "id": "basic-grey-genrage-baggy-pants",
+          "id": "basic-grey-vultures-baggy-pants",
           "discount": 34,
-          "name": "Basic Grey Genrage Baggy Pants",
+          "name": "Basic Grey Vultures Baggy Pants",
           "category": "Baggy Pants",
           "originalPrice": "₹3,299.00",
           "salePrice": "₹2,180.00",
-          "slug": "/product/basic-grey-genrage-baggy-pants",
+          "slug": "/product/basic-grey-vultures-baggy-pants",
           "image": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/basic-grey-baggy-pants-genrage-1.png?v=1780668495",
           "hoverImage": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/basic-grey-baggy-pants-genrage-2.png?v=1781246325"
         },
         {
-          "id": "dark-grey-basic-genrage-baggy-pants",
+          "id": "dark-grey-basic-vultures-baggy-pants",
           "discount": 34,
-          "name": "Dark Grey Basic Genrage Baggy Pants",
+          "name": "Dark Grey Basic Vultures Baggy Pants",
           "category": "Baggy Pants",
           "originalPrice": "₹3,299.00",
           "salePrice": "₹2,180.00",
-          "slug": "/product/dark-grey-basic-genrage-baggy-pants",
+          "slug": "/product/dark-grey-basic-vultures-baggy-pants",
           "image": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/dark-grey-basic-baggy-pants-genrage-1.png?v=1780668486",
           "hoverImage": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/dark-grey-basic-baggy-pants-genrage-2.png?v=1780668487"
         },
@@ -335,13 +335,13 @@
           "hoverImage": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/parasite-grey-baggy-pants-genrage-1.png?v=1780668390"
         },
         {
-          "id": "genrage-melange-balloon-supper-baggy-pants",
+          "id": "vultures-melange-balloon-supper-baggy-pants",
           "discount": 42,
-          "name": "Genrage Grey Balloon Pants",
+          "name": "Vultures Grey Balloon Pants",
           "category": "Baggy Pants",
           "originalPrice": "₹3,299.00",
           "salePrice": "₹1,899.00",
-          "slug": "/product/genrage-melange-balloon-supper-baggy-pants",
+          "slug": "/product/vultures-melange-balloon-supper-baggy-pants",
           "image": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/genrage-grey-balloon-pants-genrage-1.png?v=1780668503",
           "hoverImage": "https://cdn.shopify.com/s/files/1/0633/9339/9022/files/Grey_balloon_hero_AI.png?v=1781688821"
         },
@@ -1402,7 +1402,7 @@
       "href": "/partner"
     },
     {
-      "label": "GENRAGE Reviews",
+      "label": "VULTURES Reviews",
       "href": "/reviews"
     },
     {

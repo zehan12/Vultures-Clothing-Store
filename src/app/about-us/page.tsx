@@ -4,7 +4,7 @@ import { ContentPageView } from "@/components/content/content-page";
 import { contentPages } from "@/data/content";
 
 export const metadata: Metadata = {
-  title: "About Us - Gengy Summer",
+  title: "About Us - Vultures",
 };
 
 export default function AboutUsPage() {

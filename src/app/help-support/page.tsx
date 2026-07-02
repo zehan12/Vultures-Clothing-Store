@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Help & Support - Gengy Summer",
+  title: "Help & Support - Vultures",
 };
 
 export default function HelpSupportPage() {

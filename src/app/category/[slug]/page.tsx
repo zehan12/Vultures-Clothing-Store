@@ -30,8 +30,8 @@ export async function generateMetadata({ params }: PageProps) {
   if (!meta) return { title: "Category Not Found" };
 
   return {
-    title: `${meta.title} - Gengy Summer`,
-    description: `Shop ${meta.title} at Gengy Summer premium streetwear.`,
+    title: `${meta.title} - Vultures`,
+    description: `Shop ${meta.title} at Vultures premium streetwear.`,
   };
 }
 

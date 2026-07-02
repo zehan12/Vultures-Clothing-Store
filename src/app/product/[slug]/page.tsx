@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: PageProps) {
   if (!product) return { title: "Product Not Found" };
 
   return {
-    title: `${product.name} - Gengy Summer`,
+    title: `${product.name} - Vultures`,
     description: `Buy ${product.name} at ${product.salePrice}. Premium streetwear with free shipping.`,
   };
 }

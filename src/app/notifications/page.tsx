@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Notifications - Gengy Summer",
+  title: "Notifications - Vultures",
 };
 
 export default function NotificationsPage() {

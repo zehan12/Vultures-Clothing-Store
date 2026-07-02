@@ -21,7 +21,7 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Gengy Summer - Premium Streetwear",
+  title: "Vultures - Premium Streetwear",
   description:
     "Stock clearance sale 35% Extra Discount on premium streetwear. Baggy Pants, Oversized Hoodies, T-shirts & more.",
 };

@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Breadcrumb } from "@/components/shared/breadcrumb";
 
 export const metadata: Metadata = {
-  title: "Contact Us - Gengy Summer",
+  title: "Contact Us - Vultures",
 };
 
 export default function ContactUsPage() {
@@ -27,10 +27,10 @@ export default function ContactUsPage() {
               <span className="font-bold text-white">Email</span>
               <br />
               <a
-                href="mailto:support@genzy.store"
+                href="mailto:support@vultures.store"
                 className="text-[#9a1818] hover:underline"
               >
-                support@genzy.store
+                support@vultures.store
               </a>
             </p>
             <p>

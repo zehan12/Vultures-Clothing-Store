@@ -34,7 +34,7 @@ export function ProductDetail({
   );
 
   const bulkDiscounts = getBulkDiscounts(product.salePrice);
-  const brandQuote = product.name.split(" ")[0]?.toUpperCase() ?? "GENRAGE";
+  const brandQuote = product.name.split(" ")[0]?.toUpperCase() ?? "VULTURES";
 
   return (
     <div className="page-load-animate mx-auto max-w-[1200px] px-6 py-10">

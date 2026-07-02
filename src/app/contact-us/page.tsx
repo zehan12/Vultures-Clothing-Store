@@ -41,11 +41,11 @@ export default function ContactUsPage() {
             <p>
               <span className="font-bold text-white">Address</span>
               <br />
-              Trigram Clothing Private Limited
+              Vultures Clothing Headquarters
               <br />
-              C-3 basement Panchsheel Vihar
+              123 Fashion Street, Bandra West
               <br />
-              New Delhi-110017, India
+              Mumbai-400050, India
             </p>
           </div>
         </section>

@@ -32,7 +32,7 @@ export const contentPages: Record<string, ContentPage> = {
       { type: "heading", text: "Made in India" },
       {
         type: "paragraph",
-        text: "All our products are proudly designed and manufactured in India by Trigram Clothing Private Limited, New Delhi. We support local artisans and craftspeople who bring our designs to life.",
+        text: "All our products are proudly designed and manufactured in India by Vultures Clothing Headquarters, Mumbai. We support local artisans and craftspeople who bring our designs to life.",
       },
       { type: "heading", text: "Quality Promise" },
       {
@@ -103,7 +103,7 @@ export const contentPages: Record<string, ContentPage> = {
       { type: "heading", text: "1. General" },
       {
         type: "paragraph",
-        text: 'This website is operated by Trigram Clothing Private Limited. Throughout the site, the terms "we", "us" and "our" refer to Trigram Clothing Private Limited. We offer this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.',
+        text: 'This website is operated by Vultures Clothing Headquarters. Throughout the site, the terms "we", "us" and "our" refer to Vultures Clothing Headquarters. We offer this website, including all information, tools and services available from this site to you, the user, conditioned upon your acceptance of all terms, conditions, policies and notices stated here.',
       },
       { type: "heading", text: "2. Online Store Terms" },
       {

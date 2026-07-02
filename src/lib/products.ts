@@ -5,6 +5,7 @@ export const CATEGORY_MAP: Record<
   { title: string; sectionId?: string }
 > = {
   "all-products": { title: "All Products" },
+  "new-arrivals": { title: "New Arrivals" },
   "baggy-pants": { title: "Baggy Pants", sectionId: "baggy-pants" },
   "oversized-hoodies": {
     title: "Oversized Hoodies",
@@ -16,6 +17,11 @@ export const CATEGORY_MAP: Record<
   },
   shorts: { title: "Shorts", sectionId: "shorts" },
   hoodie: { title: "Hoodie", sectionId: "hoodie" },
+  "tank-tops": { title: "Tank Tops" },
+  jeans: { title: "Jeans" },
+  accessories: { title: "Accessories" },
+  clearance: { title: "Clearance" },
+  basics: { title: "Basics" },
 };
 
 export const SORT_OPTIONS = [
@@ -38,8 +44,18 @@ export function getProductsByCategory(slug: string): Product[] {
   const meta = CATEGORY_MAP[slug];
   if (!meta) return [];
 
-  if (slug === "all-products") {
-    return getAllProducts();
+  const all = getAllProducts();
+
+  if (slug === "all-products" || slug === "accessories" || slug === "jeans" || slug === "tank-tops" || slug === "basics") {
+    return all;
+  }
+
+  if (slug === "new-arrivals") {
+    return sortProducts(all, "latest").slice(0, 20);
+  }
+
+  if (slug === "clearance") {
+    return sortProducts(all, "price-asc").slice(0, 20);
   }
 
   const section = catalog.sections.find((item) => item.id === meta.sectionId);

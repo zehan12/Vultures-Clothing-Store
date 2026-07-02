@@ -17,7 +17,7 @@ import {
 
 type PageProps = {
   params: Promise<{ slug: string }>;
-  searchParams: Promise<{ page?: string; sort?: string }>;
+  searchParams: Promise<{ page?: string; sort?: string; view?: string }>;
 };
 
 export async function generateStaticParams() {
@@ -44,6 +44,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
 
   const page = Number(query.page ?? "1");
   const sort = (query.sort ?? "popularity") as SortValue;
+  const view = query.view ?? "3";
   const products = sortProducts(getProductsByCategory(slug), sort);
   const pagination = paginateProducts(products, page);
 
@@ -67,7 +68,7 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
       <div className={isAllProducts ? "mt-8 flex flex-col gap-8 lg:flex-row lg:items-start" : "mt-8"}>
         {isAllProducts && <ProductFilters />}
         <div className="flex-1">
-          <ProductGrid products={pagination.items} />
+          <ProductGrid products={pagination.items} view={view as string} />
         </div>
       </div>
 

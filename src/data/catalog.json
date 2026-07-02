@@ -1318,8 +1318,16 @@
       ]
     },
     {
-      "label": "Basics",
+      "label": "All Products",
       "href": "/category/all-products"
+    },
+    {
+      "label": "Basics",
+      "href": "/category/basics"
+    },
+    {
+      "label": "Accessories",
+      "href": "/category/accessories"
     },
     {
       "label": "Clearance",

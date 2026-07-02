@@ -6,6 +6,7 @@ import { Pagination } from "@/components/shared/pagination";
 import { SectionHeading } from "@/components/shared/section-heading";
 import { CategoryToolbar } from "@/components/store/category-toolbar";
 import { ProductGrid } from "@/components/store/product-grid";
+import { ProductFilters } from "@/components/store/product-filters";
 import {
   CATEGORY_MAP,
   type SortValue,
@@ -46,6 +47,8 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
   const products = sortProducts(getProductsByCategory(slug), sort);
   const pagination = paginateProducts(products, page);
 
+  const isAllProducts = slug === "all-products";
+
   return (
     <div className="page-load-animate mx-auto max-w-[1200px] px-6 py-8">
       <Breadcrumb
@@ -61,7 +64,12 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
         />
       </Suspense>
 
-      <ProductGrid products={pagination.items} />
+      <div className={isAllProducts ? "mt-8 flex flex-col gap-8 lg:flex-row lg:items-start" : "mt-8"}>
+        {isAllProducts && <ProductFilters />}
+        <div className="flex-1">
+          <ProductGrid products={pagination.items} />
+        </div>
+      </div>
 
       <Pagination
         currentPage={pagination.currentPage}
@@ -72,3 +80,4 @@ export default async function CategoryPage({ params, searchParams }: PageProps) 
     </div>
   );
 }
+

@@ -11,8 +11,8 @@ export function Footer() {
           <nav className="flex flex-col gap-2">
             {catalog.navLinks.map((link) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={link.label}
+                href={link.href || "#"}
                 className="text-sm text-gray-400 transition-colors hover:text-white"
               >
                 {link.label}
@@ -26,8 +26,8 @@ export function Footer() {
           <nav className="flex flex-col gap-2">
             {catalog.policyLinks.map((link) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={link.label}
+                href={link.href || "#"}
                 className="text-sm text-gray-400 transition-colors hover:text-white"
               >
                 {link.label}
@@ -41,8 +41,8 @@ export function Footer() {
           <nav className="flex flex-col gap-2">
             {catalog.helpLinks.map((link) => (
               <Link
-                key={link.href}
-                href={link.href}
+                key={link.label}
+                href={link.href || "#"}
                 className="text-sm text-gray-400 transition-colors hover:text-white"
               >
                 {link.label}

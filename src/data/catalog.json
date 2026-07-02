@@ -1288,28 +1288,42 @@
   },
   "navLinks": [
     {
-      "label": "All Products",
+      "label": "New Arrivals",
+      "href": "/category/new-arrivals"
+    },
+    {
+      "label": "Tops",
+      "items": [
+        {
+          "label": "T-Shirts",
+          "href": "/category/oversized-tshirts"
+        },
+        {
+          "label": "Hoodies",
+          "href": "/category/oversized-hoodies"
+        }
+      ]
+    },
+    {
+      "label": "Bottoms",
+      "items": [
+        {
+          "label": "Baggy Pants",
+          "href": "/category/baggy-pants"
+        },
+        {
+          "label": "Shorts",
+          "href": "/category/shorts"
+        }
+      ]
+    },
+    {
+      "label": "Basics",
       "href": "/category/all-products"
     },
     {
-      "label": "Baggy Pants",
-      "href": "/category/baggy-pants"
-    },
-    {
-      "label": "Oversized Hoodies",
-      "href": "/category/oversized-hoodies"
-    },
-    {
-      "label": "Oversized T-shirts",
-      "href": "/category/oversized-tshirts"
-    },
-    {
-      "label": "Shorts",
-      "href": "/category/shorts"
-    },
-    {
-      "label": "Hoodie",
-      "href": "/category/hoodie"
+      "label": "Clearance",
+      "href": "/category/clearance"
     }
   ],
   "policyLinks": [

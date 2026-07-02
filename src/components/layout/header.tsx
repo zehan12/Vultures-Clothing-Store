@@ -62,13 +62,27 @@ export function Header() {
 
         <nav className="hidden flex-1 flex-wrap items-center justify-center gap-x-5 gap-y-1 px-6 md:flex">
           {catalog.navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="text-[13px] font-bold tracking-wider whitespace-nowrap text-white uppercase transition-colors hover:text-[#9a1818]"
-            >
-              {link.label}
-            </Link>
+            <div key={link.label} className="group relative">
+              <Link
+                href={link.href || "#"}
+                className="py-4 text-[13px] font-bold tracking-wider whitespace-nowrap text-white uppercase transition-colors hover:text-[#9a1818]"
+              >
+                {link.label}
+              </Link>
+              {link.items && (
+                <div className="absolute top-full left-1/2 z-50 hidden min-w-[200px] -translate-x-1/2 flex-col border border-white/10 bg-black py-2 group-hover:flex">
+                  {link.items.map((subItem) => (
+                    <Link
+                      key={subItem.label}
+                      href={subItem.href || "#"}
+                      className="px-6 py-3 text-[13px] font-bold tracking-wider whitespace-nowrap text-white uppercase transition-colors hover:bg-white/5 hover:text-[#9a1818]"
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
         </nav>
 
@@ -140,14 +154,29 @@ export function Header() {
       >
         <div className="mx-auto flex max-w-[1200px] flex-col gap-1 px-6 py-4">
           {catalog.navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="py-2 text-[13px] font-bold tracking-wider text-white uppercase transition-colors hover:text-[#9a1818]"
-              onClick={() => setMobileOpen(false)}
-            >
-              {link.label}
-            </Link>
+            <div key={link.label} className="flex flex-col">
+              <Link
+                href={link.href || "#"}
+                className="py-2 text-[13px] font-bold tracking-wider text-white uppercase transition-colors hover:text-[#9a1818]"
+                onClick={() => setMobileOpen(false)}
+              >
+                {link.label}
+              </Link>
+              {link.items && (
+                <div className="flex flex-col pl-4">
+                  {link.items.map((subItem) => (
+                    <Link
+                      key={subItem.label}
+                      href={subItem.href || "#"}
+                      className="py-2 text-[13px] font-bold tracking-wider text-gray-400 uppercase transition-colors hover:text-[#9a1818]"
+                      onClick={() => setMobileOpen(false)}
+                    >
+                      {subItem.label}
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
           ))}
           <Link
             href="/account"

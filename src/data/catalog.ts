@@ -28,7 +28,8 @@ export type ProductSection = {
 
 export type NavLink = {
   label: string;
-  href: string;
+  href?: string;
+  items?: NavLink[];
 };
 
 export const catalog = catalogData as {

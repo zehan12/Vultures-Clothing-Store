@@ -1362,6 +1362,14 @@
     {
       "label": "Notifications",
       "href": "/notifications"
+    },
+    {
+      "label": "Exchange Portal",
+      "href": "#"
+    },
+    {
+      "label": "Partner With Us",
+      "href": "#"
     }
   ],
   "assets": {

@@ -2,6 +2,7 @@ import { CategorySection } from "@/components/store/category-section";
 import { FeaturedProducts } from "@/components/store/featured-products";
 import { Hero } from "@/components/store/hero";
 import { SuperSaleBanner } from "@/components/store/super-sale-banner";
+import { CustomerReviews } from "@/components/store/customer-reviews";
 import { catalog } from "@/data/catalog";
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
           bigDiscount={catalog.footer.bigDiscount}
         />
       </div>
+      <CustomerReviews />
     </>
   );
 }

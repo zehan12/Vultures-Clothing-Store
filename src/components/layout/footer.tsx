@@ -54,7 +54,7 @@ export function Footer() {
 
       <div className="border-t border-white/10 py-4 text-center">
         <p className="text-sm text-gray-500">
-          Copyright 2026 © <span className="font-bold text-white">Huddie</span>
+          Copyright 2026 © <span className="font-bold text-white">GENRAGE</span>
         </p>
       </div>
     </footer>

@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import { Menu, Search, X } from "lucide-react";
+import { Menu, Search, X, Heart, Bell } from "lucide-react";
 
 import { SearchModal } from "@/components/layout/search-modal";
 import { catalog } from "@/data/catalog";
@@ -81,6 +81,22 @@ export function Header() {
           >
             <Search className="h-5 w-5" />
           </button>
+
+          <Link
+            href="/notifications"
+            className="text-white transition-colors hover:text-[#9a1818]"
+            aria-label="Notifications"
+          >
+            <Bell className="h-5 w-5" />
+          </Link>
+
+          <Link
+            href="/wishlist"
+            className="text-white transition-colors hover:text-[#9a1818]"
+            aria-label="Wishlist"
+          >
+            <Heart className="h-5 w-5" />
+          </Link>
 
           <Link
             href="/account"

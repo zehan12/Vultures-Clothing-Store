@@ -1354,6 +1354,14 @@
     {
       "label": "Shipping Policy",
       "href": "/shipping-policy"
+    },
+    {
+      "label": "Exchange Policy",
+      "href": "/exchange-policy"
+    },
+    {
+      "label": "Policies",
+      "href": "/policies"
     }
   ],
   "helpLinks": [
@@ -1392,6 +1400,14 @@
     {
       "label": "Partner With Us",
       "href": "/partner"
+    },
+    {
+      "label": "GENRAGE Reviews",
+      "href": "/reviews"
+    },
+    {
+      "label": "Blogs",
+      "href": "/blogs"
     }
   ],
   "assets": {

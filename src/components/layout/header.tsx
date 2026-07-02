@@ -60,13 +60,13 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden flex-1 flex-wrap items-center justify-center gap-x-5 gap-y-1 px-6 md:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-x-3 lg:gap-x-5 px-4 md:flex">
           {catalog.navLinks.map((link) => (
             <div key={link.label} className="group relative">
               <Link
                 href={link.href || "#"}
                 className={cn(
-                  "py-4 text-[13px] font-bold tracking-wider whitespace-nowrap uppercase transition-colors flex items-center gap-2",
+                  "py-4 text-[11px] xl:text-[13px] font-bold tracking-wider whitespace-nowrap uppercase transition-colors flex items-center gap-1.5 lg:gap-2",
                   link.label === "Clearance" ? "text-white" : "text-white hover:text-[#9a1818]"
                 )}
               >
@@ -100,7 +100,7 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="flex shrink-0 items-center gap-4">
+        <div className="flex shrink-0 items-center gap-3 lg:gap-4">
           <button
             type="button"
             className="text-white transition-colors hover:text-[#9a1818]"

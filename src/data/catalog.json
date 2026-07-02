@@ -1334,12 +1334,24 @@
       "href": "/contact-us"
     },
     {
+      "label": "Help & Support",
+      "href": "/help-support"
+    },
+    {
       "label": "Track Order",
       "href": "/track-order"
     },
     {
       "label": "My Account",
       "href": "/account"
+    },
+    {
+      "label": "Wishlist",
+      "href": "/wishlist"
+    },
+    {
+      "label": "Notifications",
+      "href": "/notifications"
     }
   ],
   "assets": {

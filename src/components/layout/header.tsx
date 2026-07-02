@@ -8,6 +8,8 @@ import { Menu, Search, X, Heart, Bell } from "lucide-react";
 import { SearchModal } from "@/components/layout/search-modal";
 import { catalog } from "@/data/catalog";
 import { cn } from "@/lib/utils";
+import { useLanguage } from "@/components/providers/language-provider";
+import { LanguageSwitcher } from "@/components/ui/language-switcher";
 
 function CartIcon({ className }: { className?: string }) {
   return (
@@ -32,6 +34,7 @@ function CartIcon({ className }: { className?: string }) {
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
+  const { t } = useLanguage();
 
   return (
     <>
@@ -76,10 +79,10 @@ export function Header() {
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]"></span>
                     </span>
                   )}
-                  <span>{link.label}</span>
+                  <span>{t(`nav.${link.label}`)}</span>
                   {link.label === "Clearance" && (
                     <span className="rounded-full bg-[#1a0505] px-2 py-0.5 text-[10px] text-red-500 ring-1 ring-red-900/50">
-                      SALE
+                      {t("nav.Sale")}
                     </span>
                   )}
                 </Link>
@@ -91,6 +94,7 @@ export function Header() {
                         href={subItem.href || "#"}
                         className="px-6 py-3 text-[13px] font-bold tracking-wider whitespace-nowrap text-white uppercase transition-colors hover:bg-white/5 hover:text-[#9a1818]"
                       >
+                        {/* Using subItem.label as fallback, but ideally it should be translated if we add them to translations */}
                         {subItem.label}
                       </Link>
                     ))}
@@ -101,10 +105,11 @@ export function Header() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-3 lg:gap-4">
+            <LanguageSwitcher />
             <button
               type="button"
               className="text-white transition-colors hover:text-[#9a1818]"
-              aria-label="Search"
+              aria-label={t("header.search")}
               onClick={() => setSearchOpen(true)}
             >
               <Search className="h-5 w-5" />
@@ -113,7 +118,7 @@ export function Header() {
             <Link
               href="/notifications"
               className="text-white transition-colors hover:text-[#9a1818]"
-              aria-label="Notifications"
+              aria-label={t("header.notifications")}
             >
               <Bell className="h-5 w-5" />
             </Link>
@@ -121,7 +126,7 @@ export function Header() {
             <Link
               href="/wishlist"
               className="text-white transition-colors hover:text-[#9a1818]"
-              aria-label="Wishlist"
+              aria-label={t("header.wishlist")}
             >
               <Heart className="h-5 w-5" />
             </Link>
@@ -130,14 +135,14 @@ export function Header() {
               href="/account"
               className="hidden text-[13px] font-bold tracking-wider text-white uppercase transition-colors hover:text-[#9a1818] sm:block"
             >
-              LOGIN
+              {t("header.login")}
             </Link>
 
             <Link
               href="/cart"
               className="hidden items-center gap-1.5 text-[13px] tracking-wider text-white transition-colors hover:text-[#9a1818] sm:flex"
             >
-              <span className="font-normal">CART /</span>
+              <span className="font-normal">{t("header.cart")} /</span>
               <span>₹0.00</span>
               <span className="relative ml-1 inline-flex h-[30px] w-[28px] items-center justify-center">
                 <CartIcon className="h-full w-full" />
@@ -183,10 +188,10 @@ export function Header() {
                       <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]"></span>
                     </span>
                   )}
-                  <span>{link.label}</span>
+                  <span>{t(`nav.${link.label}`)}</span>
                   {link.label === "Clearance" && (
                     <span className="rounded-full bg-[#1a0505] px-2 py-0.5 text-[10px] text-red-500 ring-1 ring-red-900/50">
-                      SALE
+                      {t("nav.Sale")}
                     </span>
                   )}
                 </Link>
@@ -211,7 +216,7 @@ export function Header() {
               className="py-2 text-[13px] font-bold tracking-wider text-white uppercase transition-colors hover:text-[#9a1818]"
               onClick={() => setMobileOpen(false)}
             >
-              LOGIN
+              {t("header.login")}
             </Link>
           </div>
         </nav>

@@ -4,6 +4,7 @@ import { Dancing_Script, Lato } from "next/font/google";
 import { AnnouncementBar } from "@/components/layout/announcement-bar";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
+import { LanguageProvider } from "@/components/providers/language-provider";
 
 import "./globals.css";
 
@@ -36,10 +37,12 @@ export default function RootLayout({
       className={`${lato.variable} ${dancingScript.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-black text-white">
-        <AnnouncementBar />
-        <Header />
-        <main className="flex-1 bg-black">{children}</main>
-        <Footer />
+        <LanguageProvider>
+          <AnnouncementBar />
+          <Header />
+          <main className="flex-1 bg-black">{children}</main>
+          <Footer />
+        </LanguageProvider>
       </body>
     </html>
   );

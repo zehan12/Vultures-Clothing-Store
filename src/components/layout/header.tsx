@@ -39,7 +39,7 @@ export function Header() {
       <div className="mx-auto flex h-[70px] max-w-[1200px] items-center justify-between px-6 md:h-[90px]">
         <button
           type="button"
-          className="p-2 text-white md:hidden"
+          className="p-2 text-white lg:hidden"
           onClick={() => setMobileOpen((open) => !open)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
         >
@@ -60,7 +60,7 @@ export function Header() {
           />
         </Link>
 
-        <nav className="hidden flex-1 items-center justify-center gap-x-3 lg:gap-x-5 px-4 md:flex">
+        <nav className="hidden flex-1 items-center justify-center gap-x-3 lg:gap-x-4 xl:gap-x-5 px-4 lg:flex">
           {catalog.navLinks.map((link) => (
             <div key={link.label} className="group relative">
               <Link
@@ -162,7 +162,7 @@ export function Header() {
 
       <nav
         className={cn(
-          "border-t border-white/10 bg-black md:hidden",
+          "border-t border-white/10 bg-black lg:hidden",
           mobileOpen ? "block" : "hidden",
         )}
       >

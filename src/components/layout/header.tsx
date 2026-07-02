@@ -65,9 +65,23 @@ export function Header() {
             <div key={link.label} className="group relative">
               <Link
                 href={link.href || "#"}
-                className="py-4 text-[13px] font-bold tracking-wider whitespace-nowrap text-white uppercase transition-colors hover:text-[#9a1818]"
+                className={cn(
+                  "py-4 text-[13px] font-bold tracking-wider whitespace-nowrap uppercase transition-colors flex items-center gap-2",
+                  link.label === "Clearance" ? "text-white" : "text-white hover:text-[#9a1818]"
+                )}
               >
-                {link.label}
+                {link.label === "Clearance" && (
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]"></span>
+                  </span>
+                )}
+                <span>{link.label}</span>
+                {link.label === "Clearance" && (
+                  <span className="rounded-full bg-[#1a0505] px-2 py-0.5 text-[10px] text-red-500 ring-1 ring-red-900/50">
+                    SALE
+                  </span>
+                )}
               </Link>
               {link.items && (
                 <div className="absolute top-full left-1/2 z-50 hidden min-w-[200px] -translate-x-1/2 flex-col border border-white/10 bg-black py-2 group-hover:flex">
@@ -157,10 +171,24 @@ export function Header() {
             <div key={link.label} className="flex flex-col">
               <Link
                 href={link.href || "#"}
-                className="py-2 text-[13px] font-bold tracking-wider text-white uppercase transition-colors hover:text-[#9a1818]"
+                className={cn(
+                  "py-2 text-[13px] font-bold tracking-wider uppercase transition-colors flex items-center gap-2",
+                  link.label === "Clearance" ? "text-white" : "text-white hover:text-[#9a1818]"
+                )}
                 onClick={() => setMobileOpen(false)}
               >
-                {link.label}
+                {link.label === "Clearance" && (
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-500 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500 shadow-[0_0_10px_rgba(239,68,68,0.8)]"></span>
+                  </span>
+                )}
+                <span>{link.label}</span>
+                {link.label === "Clearance" && (
+                  <span className="rounded-full bg-[#1a0505] px-2 py-0.5 text-[10px] text-red-500 ring-1 ring-red-900/50">
+                    SALE
+                  </span>
+                )}
               </Link>
               {link.items && (
                 <div className="flex flex-col pl-4">
